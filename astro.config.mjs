@@ -7,5 +7,10 @@ export default defineConfig({
         plugins: [
             tailwindcss()
         ]
+    },
+    image: {
+        domains: [
+            'coffeeshop.local'
+        ]
     }
 });
