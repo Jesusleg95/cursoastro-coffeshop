@@ -24,7 +24,10 @@ const {title, featured_images, date, category_details, content } = post.data;
         <PostMeta date={date} />
 
         {category_details.map(cat => (
-            <PostCategories name={cat.name} />
+            <PostCategories 
+                name={cat.name} 
+                slug={cat.slug}    
+            />
         ))}
 
         <Picture 
