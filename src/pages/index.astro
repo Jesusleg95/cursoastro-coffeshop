@@ -3,6 +3,7 @@
 	import CategoryIconLabel from "@/components/ui/CategoryIconLabel.astro";
 	import bg from '@/assets/bg_home.jpg';
 import HomeGallery from "@/components/gallery/HomeGallery.astro";
+import ProductsMenu from "@/components/menu/ProductsMenu.astro";
 ---
 <Layout 
 	title="Inicio"
@@ -35,6 +36,10 @@ import HomeGallery from "@/components/gallery/HomeGallery.astro";
 	</div>
 
 	<HomeGallery 
+		slot="after-main-content"
+	/>
+
+	<ProductsMenu 
 		slot="after-main-content"
 	/>
 </Layout>
